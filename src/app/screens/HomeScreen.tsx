@@ -1,17 +1,18 @@
 import { useState } from 'react';
 import { useSession } from '../session';
+import { useNav, type Route } from '../nav';
 import { storageDescription } from '../../db/connection';
 
 /**
  * The home dashboard. Each tile is a module; modules not yet built show the
  * stage in which they arrive instead of pretending to work.
  */
-const MODULES: { key: string; name: string; stage: number; main?: boolean }[] = [
+const MODULES: { key: string; name: string; stage: number; main?: boolean; route?: Route }[] = [
   { key: 'pack', name: 'Pack an order', stage: 4, main: true },
   { key: 'orders', name: 'Customer orders', stage: 3 },
   { key: 'invoice', name: 'Invoice photo', stage: 3 },
-  { key: 'products', name: 'Products', stage: 2 },
-  { key: 'barcodes', name: 'Register barcodes', stage: 2 },
+  { key: 'products', name: 'Products', stage: 2, route: { name: 'products' } },
+  { key: 'barcodes', name: 'Barcodes', stage: 2 },
   { key: 'cartons', name: 'Cartons', stage: 6 },
   { key: 'history', name: 'Packing history', stage: 8 },
   { key: 'reports', name: 'Reports', stage: 8 },
@@ -21,6 +22,7 @@ const MODULES: { key: string; name: string; stage: number; main?: boolean }[] = 
 
 export function HomeScreen() {
   const { user, businessName, logout } = useSession();
+  const { push } = useNav();
   const [showAbout, setShowAbout] = useState(false);
 
   return (
@@ -35,9 +37,14 @@ export function HomeScreen() {
 
       <div className="tiles">
         {MODULES.map((m) => (
-          <button key={m.key} className={`tile${m.main ? ' tile-main' : ''}`} disabled>
+          <button
+            key={m.key}
+            className={`tile${m.main ? ' tile-main' : ''}`}
+            disabled={!m.route}
+            onClick={() => m.route && push(m.route)}
+          >
             <span className="tile-name">{m.name}</span>
-            <span className="tile-note">Coming in Stage {m.stage}</span>
+            <span className="tile-note">{m.route ? 'Open' : `Coming in Stage ${m.stage}`}</span>
           </button>
         ))}
       </div>
@@ -48,7 +55,7 @@ export function HomeScreen() {
       {showAbout && (
         <div className="card">
           <dl className="kv">
-            <dt>Version</dt><dd>0.1.0 (Stage 1)</dd>
+            <dt>Version</dt><dd>0.2.0 (Stage 2)</dd>
             <dt>Data stored in</dt><dd>{storageDescription()}</dd>
             <dt>Internet needed</dt><dd>No</dd>
           </dl>

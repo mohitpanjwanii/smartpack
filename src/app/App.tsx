@@ -7,6 +7,25 @@ import { SessionContext } from './session';
 import { SetupScreen } from './screens/SetupScreen';
 import { LoginScreen } from './screens/LoginScreen';
 import { HomeScreen } from './screens/HomeScreen';
+import { NavProvider, type Route } from './nav';
+import { ProductListScreen } from '../modules/products/ProductListScreen';
+import { ProductFormScreen } from '../modules/products/ProductFormScreen';
+import { ProductImportScreen } from '../modules/products/ProductImportScreen';
+
+function renderRoute(route: Route) {
+  switch (route.name) {
+    case 'home':
+      return <HomeScreen />;
+    case 'products':
+      return <ProductListScreen />;
+    case 'productForm':
+      return <ProductFormScreen key={route.id ?? 'new'} id={route.id} />;
+    case 'productImport':
+      return <ProductImportScreen />;
+    default:
+      return <HomeScreen />;
+  }
+}
 
 type Boot =
   | { state: 'loading' }
@@ -50,7 +69,7 @@ export function App() {
 
   return (
     <SessionContext.Provider value={{ db, user, businessName, logout: () => setUser(null) }}>
-      <HomeScreen />
+      <NavProvider>{renderRoute}</NavProvider>
     </SessionContext.Provider>
   );
 }

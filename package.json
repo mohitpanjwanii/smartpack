@@ -13,9 +13,12 @@
   "license": "UNLICENSED",
   "dependencies": {
     "@capacitor-community/sqlite": "^8.1.1",
+    "@capacitor-mlkit/barcode-scanning": "^8.2.2",
+    "@capacitor/app": "^8.1.2",
     "@capacitor/core": "^8.6.2",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
+    "read-excel-file": "^9.3.16",
     "sql.js": "^1.16.0"
   },
   "devDependencies": {
