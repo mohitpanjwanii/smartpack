@@ -15,13 +15,13 @@ describe('migrations', () => {
     const rows = await db.all<{ name: string }>("SELECT name FROM sqlite_master WHERE type = 'table'");
     const names = rows.map((r) => r.name);
     for (const t of REQUIRED_TABLES) expect(names, t).toContain(t);
-    expect(await currentVersion(db)).toBe(1);
+    expect(await currentVersion(db)).toBe(2);
   });
 
   it('is safe to run again (nothing re-applied)', async () => {
     const db = await freshDb();
     expect(await migrate(db)).toEqual([]);
-    expect(await currentVersion(db)).toBe(1);
+    expect(await currentVersion(db)).toBe(2);
   });
 
   it('enforces foreign keys', async () => {

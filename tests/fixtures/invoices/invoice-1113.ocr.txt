@@ -1,0 +1,45 @@
+Tax Invoice
+
+SMP BAKERS                                          Invoice No.                     Dated
+P-6-1/B, IDA Nacharam, 1st Floor, Road No.13                 SMP/25-26/1113              7-Mar-26
+Hyderabad                                                    Delivery Note                     Mode/Terms of Payment
+UDYAM : UDYAM-TS-09-0040759 (Micro)
+GSTIN/UIN: 36AGIPP2654D1ZF                    Reference No. & Date.        Other References
+State Name : Telangana, Code : 36
+Contact : 8885050182                              Buyer's Order No.              Dated
+E-Mail : smpbakers@gmail.com
+www.perfectveg.store                           Dispatch Doc No            Delivery Note Date
+Buyer (Bill to)                                                                   sp              i                  very
+ARSHA Co PRISES                                                    Dispatched through             Destination
+TELECOM NAGAR, GACHIBOWLI,                                               :
+GSTIN/UIN           : 36BCLPB0667C1ZY                                       Terms of Delivery
+State Name       : Telangana, Code : 36
+SI                  Description of Goods                    HSN/SAC | Quantity     Rate    per | Actual     Amount
+No.                                                                                                (Incl. of Tax)        Rate
+1| Vanilla Cup Cake                                        19059010 | 50 pack     50.000 | pack | 35.71        1,785.713
+2| Brownie Cake                                                  19059010      50 Box | 100.000 | Box|71.43         3,571.425
+5,357.138
+Output SGST- 2.5%                                                    2.50%                      133.929
+Output CGST - 2.5%                                                    2.50|%                      133.929
+Round - Off                                                                                   0.004
+Total                        100                               ¥ 5,625.000
+Total Unit : 50 pack, 50 Box
+Amount Chargeable (in words)                                                                                                               E.& OE
+INR Five Thousand Six Hundred Twenty Five Only
+HSN/SAC                                            Taxable         CGST          SGST/UTGST       Total
+Value     Rate | Amount | Rate | Amount |Tax Amount
+19059010                                            5,357.138| 2.50% | 133.929| 2.50% | 133.929     267.858
+Scan to pay               Total                                                   5,357.138              133.929              133.929] 267.858
+Tax Amount (in words) : INR Two Hundred Sixty Seven and Eight Hundred Fifty Eight paise Only
+Company's Bank Details
+A/c Holder's Name : SMP BAKERS
+Bank Name          : State Bank of India A/c
+Alc No.           © 62214430178
+Declaration                                                              Branch & IFS Code: SBIN0020082
+We here by certify that the Food/Foods/materials mentioned in                                                             for SMP BAKERS
+this invoic is/are warranted to be of the nature and quality which
+it by their purports/purport to be. It is fit for human consumption
+by the food packing.                                                                                                                  Authorised Signatory
+
+This is a Computer Generated Invoice
+

@@ -11,7 +11,11 @@ export type Route =
   | { name: 'barcodes' }
   | { name: 'barcodeRegister' }
   | { name: 'barcodeLookup' }
-  | { name: 'barcodeImport' };
+  | { name: 'barcodeImport' }
+  | { name: 'orders' }
+  | { name: 'invoiceCapture' }
+  | { name: 'orderReview' }
+  | { name: 'orderDetail'; id: string };
 
 interface Nav {
   route: Route;

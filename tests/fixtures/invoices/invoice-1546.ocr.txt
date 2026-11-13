@@ -1,0 +1,63 @@
+Tax Invoice
+
+i           SMP BAKERS                                        Invoice No.                    Dated
+(=            P-6-1/B, IDA Nacharam, 1st Floor, Road No.13               SMP/26-27/1546            7-Nov-26
+gtect        Hyderabad                                                    Delivery Note                     Mode/Terms of Payment
+Yd h       UDYAM : UDYAM-TS-09-0040759 (Micro)
+-           GSTIN/UIN: 36AGIPP2654D1ZF                    Reference No. & Date.        Other References
+
+State Name : Telangana, Code : 36
+Contact : 8885050182
+
+2                         N                            Buyer's Order No.              Dated
+E-Mail : smpbakers@gmail.com
+www.perfectveg.store                                  § cartoons  5                7-Nov-26 a
+Buyer Bil fo)                                                                    Ispatcl    oc No.                elivery Note Date
+MILK CORNER                                                               -                                    —
+GOVIND COMPLEX, 1861 E' 6th LANE,RAJARAPURI BUS R              Dispatched through           Destination
+KOLHAPUR MAHARASHTRA
+9765215252                                                                            Terms of Delivery
+GSTIN/UIN      : 27AAKPY6539N1ZM
+State Name       : Maharashtra, Code : 27
+SI                  Description of Goods                    HSN/SAC | Quantity     Rate    per | Actual     Amount
+No.                                                                                                (Incl. of Tax)        Rate
+1|ATTA GUD GHEE COOKIES -250G                      19059020     20 Box| 140.000|Box|97.33         1,946.662
+2| BUTTER CHOCO COOKIES -250G                       19059020      10 Box| 130.001 | Box|90.38           903.813
+3| Fruit Jam Cookies                                          19059020      10 Box     110.000 | Box | 76.48           764.763
+4 |Special Badam Cookies                                  19059020     10 Box    115.000 | Box | 79.95          799.525
+5| Special Kaju Cookies                                     19059020     10 Box    115.000 | Box | 79.95          799.525
+6] Chocolate Bar Cake                               19059010    45 Box| 155.000] Box|107.76      4,849.284
+7| Vanilla Bar Cake                                    19059010    45 Box    150.000 | Box | 104.29      4,692.852
+8| Marble Cake                                                    19059010      40 Box | 165.000 Box | 114.71        4,588.576
+9| RED VELVET MARBLE CAKE                            19059010 | 25 pack| 165.000 pack|114.71        2,867.860
+10] Dry Fruit Cake                                                 19059010 | 30 Box| 190.000 | Box|132.10        3,962.849
+11| Mawa Toast                                       19059020 | 20 pack    45.000 | pack | 31.29        625.712
+12| Brownie Cake                                              19059010      10 Box     115.000 | Box | 79.95           799.525
+13| Milky Bliss Cake                                    19059010      6 Box     85.000 | Box [59.10         354.570
+27,955.516
+Output IGST 5%                                                                     5%                        1,397.776
+Less:                               Round - Off                                                                                (-)0.292
+Total                     281                            ¥ 29,353.000
+Total Unit : 236 Box, 45 pack
+Amount Chargeable (in words)                                                                                                         E. & OE
+INR Twenty Nine Thousand Three Hundred Fifty Three Only
+HSN/SAC                                                                 Taxable          IGST            Total
+Value     Rate | Amount | Tax Amount
+19059020                                                                 5,840.000      5%| 292.000     292.000
+19059010                                                                 22,115.516      5%(1,105.776| 1,105.776
+Scan to pay             Total                                                                27,955.516           1,397.776| 1,397.776
+
+Tax Amount (in words) : INR One Thousand Three Hundred Ninety Seven and Seven Hundred Seventy Six paise Only
+Company's Bank Details
+Alc Holder's Name : SMP BAKERS
+
+Bank Name          : State Bank of India A/c
+Alc No.               © 62214430178
+Declaration                                                                Branch & IFS Code: SBIN0020082
+We here by certify that the Food/Foods/materials mentioned in                                                             for SMP BAKERS
+this invoic is/are warranted to be of the nature and quality which
+it by their purports/purport to be. It is fit for human consumption
+by the food packing.                                                                                                                  Authorised Signatory
+
+This is a Computer Generated Invoice
+

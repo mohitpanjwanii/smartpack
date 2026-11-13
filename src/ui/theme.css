@@ -163,3 +163,30 @@ button { font: inherit; }
 .mono, .mono-row { font-family: ui-monospace, Menlo, monospace; }
 .mono-row { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; }
 .scan-form input::placeholder { font-family: system-ui, sans-serif; font-size: 1.05rem; }
+
+/* Stage 3 additions */
+.tabs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; background: var(--line); padding: 4px; border-radius: 12px; }
+.tab { min-height: 48px; border: 0; border-radius: 9px; background: transparent; font-weight: 700; color: var(--ink); }
+.tab-on { background: var(--surface); color: var(--brand); }
+.card-warn { border-color: var(--warn); background: var(--warn-bg); }
+.issues { margin: 6px 0; padding-left: 20px; display: grid; gap: 4px; }
+.ok-note { color: var(--ok); font-weight: 700; font-size: 0.9rem; }
+.bad-note { color: var(--bad); font-weight: 700; font-size: 0.9rem; }
+.warn-note { color: var(--warn); font-weight: 700; font-size: 0.9rem; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.two-col input { min-width: 0; width: 100%; }
+.section-title { font-size: 1.15rem; margin: 8px 0 0; }
+.line-card { background: var(--surface); border: 2px solid var(--line); border-radius: 12px; padding: 12px; display: grid; gap: 8px; }
+.line-attention { border-color: var(--warn); background: #fffaf0; }
+.line-head { display: flex; gap: 10px; align-items: center; }
+.line-no { min-width: 32px; height: 32px; border-radius: 50%; background: var(--ink); color: #fff; display: grid; place-items: center; font-weight: 800; }
+.line-product { flex: 1; text-align: left; min-height: 52px; border: 2px dashed var(--line); background: #fff; border-radius: 10px; padding: 6px 10px; color: var(--ink); }
+.line-qty { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.line-qty input { width: 110px; min-height: 56px; font-size: 1.5rem; font-weight: 800; text-align: center; border: 2px solid var(--line); border-radius: 10px; }
+.line-actions { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.ocr-text { white-space: pre-wrap; font-size: 0.7rem; background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 8px; overflow-x: auto; max-height: 300px; }
+.modal-backdrop { position: fixed; inset: 0; background: rgba(15, 23, 32, 0.55); display: flex; align-items: flex-end; justify-content: center; z-index: 10; }
+.modal { background: var(--bg); width: 100%; max-width: 720px; max-height: 92vh; overflow-y: auto; border-radius: 18px 18px 0 0; padding: 16px 16px calc(env(safe-area-inset-bottom) + 24px); display: grid; gap: 12px; }
+.two-col-wide { grid-template-columns: 1.4fr 1fr; }
+@media (max-width: 420px) { .two-col-wide { grid-template-columns: 1fr; } }
+.chip-small { min-height: 40px; font-size: 0.85rem; padding: 0 12px; }

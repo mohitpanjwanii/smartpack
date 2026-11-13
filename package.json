@@ -1,6 +1,6 @@
 {
   "name": "smartpack",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "SmartPack: packing and carton verification for SMP Bakers",
   "scripts": {
     "dev": "vite",
@@ -8,18 +8,26 @@
     "typecheck": "tsc -b",
     "test": "vitest run",
     "test:watch": "vitest",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "postinstall": "node scripts/copy-ocr-assets.mjs",
+    "predev": "node scripts/copy-ocr-assets.mjs",
+    "prebuild": "node scripts/copy-ocr-assets.mjs"
   },
   "license": "UNLICENSED",
   "dependencies": {
     "@capacitor-community/sqlite": "^8.1.1",
     "@capacitor-mlkit/barcode-scanning": "^8.2.2",
     "@capacitor/app": "^8.1.2",
+    "@capacitor/camera": "^8.2.6",
     "@capacitor/core": "^8.6.2",
+    "@capacitor/filesystem": "^8.1.5",
+    "@tesseract.js-data/eng": "^1.0.0",
+    "pdfjs-dist": "^4.10.38",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "read-excel-file": "^9.3.16",
-    "sql.js": "^1.16.0"
+    "sql.js": "^1.16.0",
+    "tesseract.js": "^7.0.0"
   },
   "devDependencies": {
     "@capacitor/android": "^8.6.2",

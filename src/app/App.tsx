@@ -15,6 +15,10 @@ import { BarcodesHubScreen } from '../modules/barcodes/BarcodesHubScreen';
 import { RegisterBarcodesScreen } from '../modules/barcodes/RegisterBarcodesScreen';
 import { BarcodeLookupScreen } from '../modules/barcodes/BarcodeLookupScreen';
 import { BarcodeImportScreen } from '../modules/barcodes/BarcodeImportScreen';
+import { OrdersListScreen } from '../modules/orders/OrdersListScreen';
+import { InvoiceCaptureScreen } from '../modules/orders/InvoiceCaptureScreen';
+import { OrderReviewScreen } from '../modules/orders/OrderReviewScreen';
+import { OrderDetailScreen } from '../modules/orders/OrderDetailScreen';
 
 function renderRoute(route: Route) {
   switch (route.name) {
@@ -34,6 +38,14 @@ function renderRoute(route: Route) {
       return <BarcodeLookupScreen />;
     case 'barcodeImport':
       return <BarcodeImportScreen />;
+    case 'orders':
+      return <OrdersListScreen />;
+    case 'invoiceCapture':
+      return <InvoiceCaptureScreen />;
+    case 'orderReview':
+      return <OrderReviewScreen />;
+    case 'orderDetail':
+      return <OrderDetailScreen key={route.id} id={route.id} />;
     default:
       return <HomeScreen />;
   }

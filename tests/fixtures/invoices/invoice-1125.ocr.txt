@@ -1,0 +1,57 @@
+Tax Invoice
+
+SMP BAKERS                                          Invoice No.                     Dated
+
+P-6-1/B, IDA Nacharam, 1st Floor, Road No.13               SMP/25-26/1125             10-Mar-26
+
+Hyderabad                                                    Delivery Note                     Mode/Terms of Payment
+UDYAM : UDYAM-TS-09-0040759 (Micro)
+
+GSTIN/UIN: 36AGIPP2654D1ZF                    Reference No. & Date.        Other References
+
+State Name : Telangana, Code : 36
+Contact : 8885050182
+
+2                         N                            Buyer's Order No.              Dated
+E-Mail : smpbakers@gmail.com
+www .perfectveg.store                                  250418242  5                10-Mar-26  oa
+Buyer (BT 0)                                                         ispatch Doc No.             elivery Note Date
+Ratnadeep Retail Pvt Limited                                        =                                 —
+D     tched th     h            Destinati
+(CIO HYNDAVA LOGISTIC PARK ) SY.NOSE504/P, 505/P, 511/P, 512/P PUDOOR (V)                  ispatched throug               estination
+MEDCHAL(M) MEDCHAL-MALKAJGIRI DISTRICT HYDERABAD
+501401                                                                                    Terms of Delivery
+GSTIN/UIN        : 36AABCR8939B1ZB
+State Name       : Telangana, Code : 36
+SI                  Description of Goods                    HSN/SAC | Quantity     Rate    per | Actual     Amount
+No.                                                                                                (Incl. of Tax)        Rate
+1| Fruit Jam Cookies                                         19059020 | 164 Box     100.000 | Box | 66.67       10,933.322
+2| Jeera Cookies                                                 19059020      89 Box     100.000 | Box | 66.67         5,933.327
+3| Special Kaju Cookies                                   19059020 | 105 Box    105.000 | Box | 70.00        7,350.000
+4| Vanilla Cup Cake                                          19059010 | 505 pack      50.000 | pack| 33.33       16,833.317
+41,049.966
+Output SGST- 2.5%                                                    2.50%                    1,026.249
+Output CGST - 2.5%                                                    2.50|%                    1,026.249
+Less:                               Round - Off                                                                                (-)0.464
+Total                       863                              ¥ 43,102.000
+Total Unit : 358 Box, 505 pack
+Amount Chargeable (in words)                                                                                                               E. & OE
+INR Forty Three Thousand One Hundred Two Only
+HSN/SAC                                 Taxable            CGST             SGST/UTGST         Total
+Value       Rate     Amount     Rate     Amount    Tax Amount
+19059020                                                          24,216.649| 2.50%      605.416 | 2.50%      605.416    1,210.832
+19059010                                           16,833.317| 2.50%     420.833 | 2.50%     420.833     841.666
+Total | 41,049.966             1,026.249             1,026.249    2,052.498
+Tax Amount (in words) : INR Two Thousand Fifty Two and Four Hundred Ninety Eight paise Only
+Company's Bank Details
+A/c Holder's Name : SMP BAKERS
+Bank Name          : State Bank of India A/c
+Alc No.           © 62214430178
+Declaration                                                              Branch & IFS Code: SBIN0020082
+We here by certify that the Food/Foods/materials mentioned in                                                             for SMP BAKERS
+this invoic is/are warranted to be of the nature and quality which
+it by their purports/purport to be. It is fit for human consumption
+by the food packing.                                                                                                                  Authorised Signatory
+
+This is a Computer Generated Invoice
+

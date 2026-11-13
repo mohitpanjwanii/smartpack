@@ -9,8 +9,8 @@ import { storageDescription } from '../../db/connection';
  */
 const MODULES: { key: string; name: string; stage: number; main?: boolean; route?: Route }[] = [
   { key: 'pack', name: 'Pack an order', stage: 4, main: true },
-  { key: 'orders', name: 'Customer orders', stage: 3 },
-  { key: 'invoice', name: 'Invoice photo', stage: 3 },
+  { key: 'orders', name: 'Customer orders', stage: 3, route: { name: 'orders' } },
+  { key: 'invoice', name: 'Order from invoice', stage: 3, route: { name: 'invoiceCapture' } },
   { key: 'products', name: 'Products', stage: 2, route: { name: 'products' } },
   { key: 'barcodes', name: 'Barcodes', stage: 2, route: { name: 'barcodes' } },
   { key: 'cartons', name: 'Cartons', stage: 6 },
@@ -55,9 +55,9 @@ export function HomeScreen() {
       {showAbout && (
         <div className="card">
           <dl className="kv">
-            <dt>Version</dt><dd>0.2.0 (Stage 2)</dd>
+            <dt>Version</dt><dd>0.3.0 (Stage 3)</dd>
             <dt>Data stored in</dt><dd>{storageDescription()}</dd>
-            <dt>Internet needed</dt><dd>No</dd>
+            <dt>Internet needed</dt><dd>No (invoices are read on the phone)</dd>
           </dl>
         </div>
       )}

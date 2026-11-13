@@ -10,6 +10,8 @@ export type Action =
   | 'barcodes.register'
   | 'barcodes.import'
   | 'barcodes.changeStatus'
+  | 'orders.create'
+  | 'orders.edit'
   | 'users.manage';
 
 const RULES: Record<Action, Role[]> = {
@@ -18,6 +20,8 @@ const RULES: Record<Action, Role[]> = {
   'barcodes.register': ['packer', 'supervisor', 'admin'],
   'barcodes.import': ['supervisor', 'admin'],
   'barcodes.changeStatus': ['supervisor', 'admin'],
+  'orders.create': ['packer', 'supervisor', 'admin'],
+  'orders.edit': ['supervisor', 'admin'],
   'users.manage': ['admin'],
 };
 
