@@ -11,6 +11,10 @@ import { NavProvider, type Route } from './nav';
 import { ProductListScreen } from '../modules/products/ProductListScreen';
 import { ProductFormScreen } from '../modules/products/ProductFormScreen';
 import { ProductImportScreen } from '../modules/products/ProductImportScreen';
+import { BarcodesHubScreen } from '../modules/barcodes/BarcodesHubScreen';
+import { RegisterBarcodesScreen } from '../modules/barcodes/RegisterBarcodesScreen';
+import { BarcodeLookupScreen } from '../modules/barcodes/BarcodeLookupScreen';
+import { BarcodeImportScreen } from '../modules/barcodes/BarcodeImportScreen';
 
 function renderRoute(route: Route) {
   switch (route.name) {
@@ -22,6 +26,14 @@ function renderRoute(route: Route) {
       return <ProductFormScreen key={route.id ?? 'new'} id={route.id} />;
     case 'productImport':
       return <ProductImportScreen />;
+    case 'barcodes':
+      return <BarcodesHubScreen />;
+    case 'barcodeRegister':
+      return <RegisterBarcodesScreen />;
+    case 'barcodeLookup':
+      return <BarcodeLookupScreen />;
+    case 'barcodeImport':
+      return <BarcodeImportScreen />;
     default:
       return <HomeScreen />;
   }

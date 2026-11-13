@@ -1,6 +1,6 @@
 {
   "name": "smartpack",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "SmartPack: packing and carton verification for SMP Bakers",
   "scripts": {
     "dev": "vite",

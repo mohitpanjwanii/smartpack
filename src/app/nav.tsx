@@ -8,7 +8,10 @@ export type Route =
   | { name: 'products' }
   | { name: 'productForm'; id?: string }
   | { name: 'productImport' }
-  | { name: 'barcodes' };
+  | { name: 'barcodes' }
+  | { name: 'barcodeRegister' }
+  | { name: 'barcodeLookup' }
+  | { name: 'barcodeImport' };
 
 interface Nav {
   route: Route;

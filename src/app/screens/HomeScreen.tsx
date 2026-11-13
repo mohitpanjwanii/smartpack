@@ -12,7 +12,7 @@ const MODULES: { key: string; name: string; stage: number; main?: boolean; route
   { key: 'orders', name: 'Customer orders', stage: 3 },
   { key: 'invoice', name: 'Invoice photo', stage: 3 },
   { key: 'products', name: 'Products', stage: 2, route: { name: 'products' } },
-  { key: 'barcodes', name: 'Barcodes', stage: 2 },
+  { key: 'barcodes', name: 'Barcodes', stage: 2, route: { name: 'barcodes' } },
   { key: 'cartons', name: 'Cartons', stage: 6 },
   { key: 'history', name: 'Packing history', stage: 8 },
   { key: 'reports', name: 'Reports', stage: 8 },

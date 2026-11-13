@@ -85,18 +85,19 @@ export async function planBarcodeImport(db: Db, table: Table, unsafeNumberRows: 
       fail(`${product.name} is switched off`);
       continue;
     }
+    const owner = existing.get(barcode);
+    if (owner && owner !== product.id) {
+      const other = products.find((p) => p.id === owner);
+      fail(`Already registered to a different product: ${other?.name ?? 'unknown'}`);
+      continue;
+    }
     if (seen.has(barcode)) {
       fail('Barcode repeated in this file');
       continue;
     }
     seen.add(barcode);
-    const owner = existing.get(barcode);
     if (owner) {
-      if (owner === product.id) rows.push({ rowNo, action: 'already', barcode, productId: product.id, productLabel: product.name });
-      else {
-        const other = products.find((p) => p.id === owner);
-        fail(`Already registered to a different product: ${other?.name ?? 'unknown'}`);
-      }
+      rows.push({ rowNo, action: 'already', barcode, productId: product.id, productLabel: product.name });
       continue;
     }
     rows.push({ rowNo, action: 'new', barcode, productId: product.id, productLabel: product.name, serial: get(r, 'serial') || barcode });

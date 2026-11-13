@@ -56,7 +56,7 @@ export function ScanInput({ onCode, busy, label = 'Scan or type a barcode' }: Pr
         <input
           ref={ref}
           aria-label={label}
-          placeholder={label}
+          placeholder="Scan or type barcode"
           value={value}
           onChange={(e) => setValue(e.target.value)}
           autoComplete="off"
