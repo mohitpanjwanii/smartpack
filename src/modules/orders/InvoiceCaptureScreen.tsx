@@ -3,6 +3,7 @@ import { useSession } from '../../app/session';
 import { ScreenHeader, useNav } from '../../app/nav';
 import { listProducts } from '../../db/repositories/products';
 import { getAliasMap } from '../../db/repositories/aliases';
+import { withKnownInvoiceNames } from '../../domain/invoiceNameMap';
 import { getSetting } from '../../db/repositories/settings';
 import { parseTallyInvoice } from '../../domain/invoiceParser';
 import { canUseCamera, takeInvoicePhoto } from '../../services/camera';
@@ -34,7 +35,7 @@ export function InvoiceCaptureScreen() {
       }
       const text = texts.join('\n\n----- next reading -----\n\n');
       const [products, aliases] = await Promise.all([listProducts(db), getAliasMap(db)]);
-      draftStore.set(draftFromInvoice(parsed, products, aliases, { blob, name, source }, text));
+      draftStore.set(draftFromInvoice(parsed, products, withKnownInvoiceNames(aliases, products), { blob, name, source }, text));
       setStage(null);
       push({ name: 'orderReview' });
     } catch (err) {
